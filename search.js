@@ -24,7 +24,7 @@ function run(argv) {
     // const cjkRegex = /(\p{Unified_Ideograph}+)/ug
     const cjkRegex = /([\u1100-\u11ff\u2e80-\u9fff\uac00-\ud7ff\uff00-\uffef]+)/ug;
     const query = argv[0].replace(/^\s+|\s+$/g, '').replace(cjkRegex, "~$1");
-    var DNt = Application("DEVONthink 3");
+    var DNt = Application("DEVONthink");
     var allDB = DNt.databases
     // if selectedDbUUID exists, only search in selected db.
     if (typeof selectedDbUUID !== 'undefined') {
@@ -70,7 +70,7 @@ function run(argv) {
                 item["type"] = "default"
                 // group 的 path() 为空，但是 item["arg"] 为空时 Alfred 不可执行后续动作
                 // 故以应用路径代替
-                item["arg"] = "/Applications/DEVONthink 3.app"
+                item["arg"] = "/Applications/DEVONthink.app"
                 item["title"] = "[Group] " + itemName
                 if (record.location() == "/Tags/") {
                     item["title"] = "[Tag] " + itemName

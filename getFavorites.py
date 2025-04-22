@@ -5,7 +5,7 @@ import plistlib
 import os
 import json
 
-filePath = os.path.expanduser("~/Library/Application Support/DEVONthink 3/Favorites.plist")
+filePath = os.path.expanduser("~/Library/Application Support/DEVONthink/Favorites.plist")
 
 result = {"items": []}
 

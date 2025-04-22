@@ -287,7 +287,7 @@
 	<key>createdby</key>
 	<string>Charles Ma</string>
 	<key>description</key>
-	<string>Powerful tool for searching in DEVONthink 3</string>
+	<string>Powerful tool for searching in DEVONthink</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -329,8 +329,8 @@ open "x-devonthink://search?query=${queryStr}"</string>
 				<string>on run argv
 	set theQuery to item 1 of argv
 	set theNewQuery to (do shell script "echo '" &amp; theQuery &amp; "' | perl -CIOED -p -e 's/(\\p{Block=CJK_Unified_Ideographs}+)/ ~\\1 /g'")
-	tell application "DEVONthink 3" to activate
-	tell application "System Events" to tell process "DEVONthink 3"
+	tell application "DEVONthink" to activate
+	tell application "System Events" to tell process "DEVONthink"
 		keystroke "n" using {command down, option down} -- open new window
 		set focused of text field 1 of group 3 of toolbar 1 of window 1 to true -- focus on search field
 		set value of text field 1 of group 3 of toolbar 1 of window 1 to theNewQuery
@@ -529,7 +529,7 @@ end run</string>
 				<key>script</key>
 				<string>function run(argv) {
     var query = argv[0];
-    const DNt = Application('DEVONthink 3');
+    const DNt = Application('DEVONthink');
 	DNt.activate()
     DNt.openWindowFor({ record: DNt.getRecordWithUuid(query) })
 }</string>
@@ -865,7 +865,7 @@ fi</string>
 				<key>script</key>
 				<string>on run
 	set theQuery to "{query}"
-	tell application "DEVONthink 3"
+	tell application "DEVONthink"
 		load workspace theQuery
 		activate
 	end tell
@@ -972,7 +972,7 @@ fi</string>
 				<key>script</key>
 				<string>on run
 	set theQuery to "{query}"
-	tell application "DEVONthink 3"
+	tell application "DEVONthink"
 		save workspace theQuery
 	end tell
 end run</string>

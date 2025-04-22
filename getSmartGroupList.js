@@ -19,7 +19,7 @@ function run(argv) {
         }
     }
 
-    let DNt = Application("DEVONthink 3");
+    let DNt = Application("DEVONthink");
     let allDB = DNt.databases
 
     // if selectedDbUUID exists, only search in selected db.

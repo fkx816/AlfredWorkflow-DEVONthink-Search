@@ -1,6 +1,6 @@
 <h1 align="center">DEVONthink Search</h1>
 
-<h4 align="center">Powerful tool for seaching in DEVONthink 3</h4>
+<h4 align="center">Powerful tool for seaching in DEVONthink</h4>
 
 <p align="center">
     <a href="#">
@@ -17,7 +17,9 @@
 </p>
 
 
-**NB:** For DEVONthink 2.x, you should use the versions of this workflow before V7.0. Switch to [Branch DEVONthink 2.x](https://github.com/mpco/AlfredWorkflow-DEVONthink-Search/tree/DEVONthink2.x) to access the README document and source code.
+**NB:** 
+- For DEVONthink 2.x, you should use the versions of this workflow before V7.0. Switch to [Branch DEVONthink 2.x](https://github.com/mpco/AlfredWorkflow-DEVONthink-Search/tree/DEVONthink2.x) to access the README document and source code.
+- This version has been updated to support DEVONthink 4 and Alfred 5.
 
 **Sorry, no more updates as I no longer use a Mac computer and the installation of macOS virtual machine failed.**
 
